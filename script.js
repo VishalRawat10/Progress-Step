@@ -12,7 +12,6 @@ btns[1].addEventListener("click", ()=>{
     btns[1].classList.add("btn-border");
     btns[0].classList.remove("btn-border");
     if(nextCount <= 3){
-        console.log(btns[1], "clicked.");
         levels[nextCount].classList.add("blue-border");
         progressBars[nextCount-1].classList.add("blue-border");
         levels[nextCount].classList.remove("remove-blue-border");
@@ -30,7 +29,6 @@ btns[0].addEventListener("click", ()=>{
     btns[0].classList.add("btn-border");
     btns[1].classList.remove("btn-border");
     if(prevCount >= 0){
-        console.log(btns[0], "clicked.");
         levels[nextCount+1].classList.remove("blue-border");
         progressBars[nextCount].classList.remove("blue-border");
         levels[nextCount+1].classList.add("remove-blue-border");
@@ -40,7 +38,3 @@ btns[0].addEventListener("click", ()=>{
         }
     }
 })
-
-function changes(next, prev){
-
-}
